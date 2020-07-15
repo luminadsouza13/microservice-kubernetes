@@ -1,16 +1,10 @@
- pipeline {
-  agent {
-   docker{
-    image 'maven:3-alpine'
-   }
-  }
-  stages {
-    stage('Build') {
-      steps {
-        sh 'cd microservice-kubernetes-demo'
-        sh './mvn clean package'
-      }
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
+            }
+        }
     }
-
-  }
 }

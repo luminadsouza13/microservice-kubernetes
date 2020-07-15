@@ -8,7 +8,7 @@
     stage('Build') {
       steps {
         sh 'cd microservice-kubernetes-demo'
-        sh './mvnw clean package'
+        sh './mvn clean package'
       }
     }
 

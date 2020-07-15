@@ -16,47 +16,8 @@ stages{
 		steps{
 			echo "Building application and Docker image"
 			sh "mvn clean package"	
-	}
-	stage('Local tests') {
-		steps{
+		}
 	}
 
 	}
-	stage('Publish Docker') {
-			steps{
-	}
-	}
-	stage('Deploy to dev') {
-			steps{
-	}
-	}
-	stage('Dev tests') {
-			steps{
-	}
-	}
-	stage('Cleanup dev') {
-			steps{
-	}
-	}
-	stage('Deploy to staging') {
-			steps{
-	}
-	}
-	stage('Staging tests') {
-			steps{
-	}
-	}
-	stage('Cleanup staging') {
-			steps{
-	}
-	}
-	////////// Step 6 //////////
-    // Waif for user manual approval, or proceed automatically if DEPLOY_TO_PROD is true
-   stage('Go for Production?') {
-			steps{
-	}
-	}
-}
-
-
 }
